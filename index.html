@@ -3,76 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
-    <!-- KODE CSS (Untuk Mempercantik Tampilan) -->
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
-            text-align: center;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 40px 20px;
-        }
-        h1 {
-            margin: 0 0 10px 0;
-        }
-        .container {
-            max-width: 600px;
-            margin: 30px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        button {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        button:hover {
-            background-color: #2980b9;
-        }
-        #pesan {
-            margin-top: 20px;
-            font-size: 18px;
-            font-weight: bold;
-            color: #27ae60;
-        }
-    </style>
+    <title>Universitas Royal - Pengumuman</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Selamat Datang di Website Saya!</h1>
-        <p>Website ini dibuat menggunakan HTML, CSS, dan JavaScript.</p>
+    <!-- NAVBAR HEADER -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">👑</span>
+            <span class="logo-text">Universitas Royal</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="active">Beranda</a>
+            <a href="#">Profil ▾</a>
+            <a href="#">Akademik ▾</a>
+            <a href="#">Mahasiswa ▾</a>
+            <a href="#">Informasi ▾</a>
+        </nav>
+        <div class="nav-actions">
+            <span class="icon">🔍</span>
+            <span class="icon">🌐</span>
+            <span class="icon">⣿</span>
+            <a href="#" class="btn-info">👤 Info Pendaftaran</a>
+        </div>
     </header>
 
-    <div class="container">
-        <h2>Tentang Saya</h2>
-        <p>Saya adalah pemula yang sedang belajar membuat website dan meng-onlineskannya sendiri lewat GitHub Pages.</p>
-        
-        <!-- KODE INTERAKSI (Tombol) -->
-        <button onclick="sapaPengunjung()">Klik Saya!</button>
-        <p id="pesan"></p>
+    <!-- HERO BANNER -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="breadcrumb">
+                <span>🏠 Beranda</span>
+                <span>Pengumuman</span>
+            </div>
+            <div class="badge">ARSIP INFORMASI</div>
+            <h1>Pengumuman</h1>
+            <p>Jelajahi kumpulan publikasi dan artikel dalam arsip ini di lingkungan Universitas Royal.</p>
+        </div>
+        <div class="yellow-circle"></div>
+    </section>
+
+    <!-- CONTAINER KARTU PENGUMUMAN -->
+    <main class="content-container">
+        <div class="cards-grid">
+
+            <!-- Card 1 -->
+            <article class="card">
+                <div class="card-image blue-bg">
+                    <span class="card-tag">Berita</span>
+                    <div class="banner-text">
+                        <h2>Berita dan Informasi</h2>
+                        <p>UNIVERSITAS ROYAL</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>📅 September 14, 2026</span>
+                        <span>👤 BAAK Universitas Royal</span>
+                    </div>
+                    <h3 class="card-title">JADWAL PERKULIAHAN SEMESTER GANJIL 2026-2027 UNIVERSITAS ROYAL</h3>
+                    <p class="card-excerpt">Bagi Mahasiswa silahkan ketik Kelas atau Matakuliah di...</p>
+                    <a href="#" class="card-link">Baca Selengkapnya →</a>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+                <div class="card-image blue-bg">
+                    <span class="card-tag">Pengumuman</span>
+                    <div class="banner-text">
+                        <h2>Berita dan Informasi</h2>
+                        <p>UNIVERSITAS ROYAL</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>📅 September 7, 2026</span>
+                        <span>👤 administrator</span>
+                    </div>
+                    <h3 class="card-title">PESERTA PKKMB T.A 2026-2027 PER KELOMPOK</h3>
+                    <p class="card-excerpt">Silahkan Masukkan PMBID/NIM/Nama Pada Kolom Pen...</p>
+                    <a href="#" class="card-link">Baca Selengkapnya →</a>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+                <div class="card-image blue-bg">
+                    <span class="card-tag">Pengumuman</span>
+                    <div class="banner-text">
+                        <h2>Berita dan Informasi</h2>
+                        <p>UNIVERSITAS ROYAL</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>📅 September 3, 2026</span>
+                        <span>👤 administrator</span>
+                    </div>
+                    <h3 class="card-title">JADWAL UJIAN TPA KIP KULIAH UNIVERSITAS ROYAL 2026</h3>
+                    <p class="card-excerpt">Ujian Tes Potensi Akademik (TPA) untuk Seleksi Kartu In...</p>
+                    <a href="#" class="card-link">Baca Selengkapnya →</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- FLOATING BUTTONS -->
+    <div class="floating-buttons">
+        <button class="btn-float wa">💬</button>
+        <button class="btn-float dark" id="darkToggle">🌙</button>
     </div>
 
-    <!-- KODE JAVASCRIPT (Untuk Fitur Interaktif) -->
-    <script>
-        function sapaPengunjung() {
-            document.getElementById("pesan").innerText = "Halo! Terima kasih sudah berkunjung ke website saya 😊";
-        }
-    </script>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
