@@ -2,10 +2,77 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Website Pertamaku</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <!-- KODE CSS (Untuk Mempercantik Tampilan) -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 20px;
+        }
+        h1 {
+            margin: 0 0 10px 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #pesan {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #27ae60;
+        }
+    </style>
 </head>
 <body>
-    <h1>Halo, Dunia!</h1>
-    <p>Ini adalah website pertama yang saya buat pakai VS Code.</p>
+
+    <header>
+        <h1>Selamat Datang di Website Saya!</h1>
+        <p>Website ini dibuat menggunakan HTML, CSS, dan JavaScript.</p>
+    </header>
+
+    <div class="container">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah pemula yang sedang belajar membuat website dan meng-onlineskannya sendiri lewat GitHub Pages.</p>
+        
+        <!-- KODE INTERAKSI (Tombol) -->
+        <button onclick="sapaPengunjung()">Klik Saya!</button>
+        <p id="pesan"></p>
+    </div>
+
+    <!-- KODE JAVASCRIPT (Untuk Fitur Interaktif) -->
+    <script>
+        function sapaPengunjung() {
+            document.getElementById("pesan").innerText = "Halo! Terima kasih sudah berkunjung ke website saya 😊";
+        }
+    </script>
+
 </body>
 </html>
